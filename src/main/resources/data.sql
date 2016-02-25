@@ -1,1 +1,1 @@
-INSERT INTO customers(id, first_name, last_name) VALUES (100, 'Pamda','Warrior');
+INSERT INTO customer(first_name, last_name) VALUES ('Pamda','Warrior');

@@ -17,6 +17,8 @@ public class Customer {
     private String firstName;
     private String lastName;
 
+    public Customer() {};
+
     public Customer(long id, String firstName, String lastName) {
         this.setId(id);
         this.setFirstName(firstName);
