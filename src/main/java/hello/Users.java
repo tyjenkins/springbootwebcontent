@@ -14,9 +14,7 @@ public class Users {
     private Boolean enabled;
 
     public String getUserDisplay() {
-        return String.format(
-                "Users[username=%s, password='%s', enabled='%s']",
-                getUsername(), getPassword(), getEnabled());
+        return getUsername() + " --> " + getPassword() + " --> " + getEnabled();
     }
 
     public String getUsername() {
