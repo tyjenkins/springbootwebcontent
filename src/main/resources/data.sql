@@ -1,1 +1,1 @@
-INSERT INTO customer(first_name, last_name) VALUES ('Pamda','Warrior');
+INSERT INTO users(username, password, enabled) VALUES ('Pamda','Warrior', true);
