@@ -17,7 +17,8 @@ public class UsersController {
 
     @RequestMapping(value = "/users-result", method = RequestMethod.GET)
     public String showAllUsers(Model model) {
-        model.addAttribute("users", usersRepository.findAll());
+        //model.addAttribute("users", usersRepository.findAll());
+        model.addAttribute("users", usersRepository.findByUsername("Pamda"));
         return "users-result";
     }
 }
