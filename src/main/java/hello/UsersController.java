@@ -19,7 +19,8 @@ public class UsersController {
     public String showAllUsers(Model model) {
         //model.addAttribute("users", usersRepository.findAll());
         //model.addAttribute("users", usersRepository.findByUsername("Pamda"));
-        model.addAttribute("users", usersRepository.findByUsernameAndPassword("Pamda", "Warrior"));
+        //model.addAttribute("users", usersRepository.findByUsernameAndPassword("Pamda", "Warrior"));
+        model.addAttribute("users", usersRepository.findByUser1OrUser2("Pamda", "Tyger"));
         return "users-result";
     }
 }
